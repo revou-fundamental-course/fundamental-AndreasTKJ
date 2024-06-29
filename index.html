@@ -7,28 +7,34 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <!-- Start Header -->
     <header>
-      <div class="logo-icon"></div>
+      <div class="logo-icon">
+        <img src="assets/images/Icon.webp" alt="" />
+      </div>
       <nav>
-        <a href="#">Home</a>
+        <a href="#home">Home</a>
         <a href="#our-profile">Our Profile</a>
-        <a href="#">Project</a>
+        <a href="#our-project">Project</a>
         <a href="#">Message Us</a>
       </nav>
     </header>
-    <hr />
     <!-- End Header -->
 
     <!-- Start Content -->
     <main>
       <!-- Home -->
-      <section>
-        <header>
+      <section id="home">
+        <div class="title">
           <h1>Hi User, Welcome to website</h1>
-        </header>
+        </div>
         <article>
           <p>Ini adalah website portfolio saya</p>
           <div class="banner-container"></div>
@@ -38,31 +44,150 @@
 
       <!-- Our Profile -->
       <section id="our-profile">
-        <header>
+        <div class="title">
           <h1>Our Profile</h1>
-        </header>
+        </div>
         <article id="profile-content">
           <div class="profile-item">
             <div class="profile-icon">
-              <img src="" alt="" />
+              <img src="assets/images/profile/1.jpg" alt="" />
             </div>
-            <h1>Andreas</h1>
+            <a href="https://www.instagram.com/jkt48.fiony/" target="_blank"
+              >Fiony</a
+            >
           </div>
           <div class="profile-item">
             <div class="profile-icon">
-              <img src="" alt="" />
+              <img src="assets/images/profile/2.jpg" alt="" />
             </div>
-            <h1>Andreas</h1>
+            <a
+              href="https://www.instagram.com/andreas.andreas25/"
+              target="_blank"
+              >Andreas</a
+            >
           </div>
           <div class="profile-item">
             <div class="profile-icon">
-              <img src="" alt="" />
+              <img src="assets/images/profile/3.jpg" alt="" />
             </div>
-            <h1>Andreas</h1>
+            <a href="https://www.instagram.com/jkt48gracia/" target="_blank"
+              >Gracia</a
+            >
           </div>
         </article>
       </section>
+
+      <!-- Projects -->
+      <section id="our-project">
+        <div class="title">
+          <h1>Our Projects</h1>
+        </div>
+        <div class="card-content">
+          <div class="card-item">
+            <img src="assets/images/project/1.jpg" alt="Noir Spade65" />
+            <h1>Noir Spade65</h1>
+            <div class="line"></div>
+            <a
+              href="https://youtu.be/Q0uWyMMnSRg?si=CJod4v1ZHepab-op"
+              target="_blank"
+              >Review by ochaxt <span><i class="bi bi-youtube"></i></span
+            ></a>
+          </div>
+          <div class="card-item">
+            <img src="assets/images/project/2.jpg" alt="Press Play Voyager68" />
+            <h1>Press Play Voyager68</h1>
+            <div class="line"></div>
+            <a
+              href="https://youtu.be/zNp-1rouxTI?si=7qTUZslQ6kcU1zyh"
+              target="_blank"
+              >Review by ochaxt <span><i class="bi bi-youtube"></i></span
+            ></a>
+          </div>
+          <div class="card-item">
+            <img src="assets/images/project/3.jpg" alt="Yunzii AL66 CNC" />
+            <h1>Yunzii AL66 CNC</h1>
+            <div class="line"></div>
+            <a
+              href="https://youtu.be/IvjutfzXM7o?si=3AOW2DpWNdjVDTaz"
+              target="_blank"
+              >Review by Techmanis <span><i class="bi bi-youtube"></i></span
+            ></a>
+          </div>
+          <div class="card-item">
+            <img src="assets/images/project/4.jpg" alt="Monsgeek x MYNK M7W" />
+            <h1>Monsgeek x MYNK M7W</h1>
+            <div class="line"></div>
+            <a
+              href="https://youtu.be/793M4EXqjSI?si=5AT5TgUTcnqcrUzR"
+              target="_blank"
+              >Review by Techmanis <span><i class="bi bi-youtube"></i></span
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="form-preview">
+        <article id="form" class="flex">
+          <form action="">
+            <table>
+              <!-- Text Fields -->
+              <tr>
+                <td><label for="name">Nama</label></td>
+                <td>:<span class="jarak"></span></td>
+                <th><input id="name" type="text" placeholder="Nama" /></th>
+              </tr>
+              <tr>
+                <td><label for="date">Tanggal Lahir</label></td>
+                <td>:</td>
+                <th><input id="date" type="date" /></th>
+              </tr>
+              <!-- Radio Buttons -->
+              <tr>
+                <td><label for="jeniskelamin">Jenis Kelamin</label></td>
+                <td>:</td>
+                <td>
+                  <input type="radio" id="pria" name="gender" value="pria" />
+                  <label for="pria">Pria</label>
+                  <input
+                    type="radio"
+                    id="perempuan"
+                    name="gender"
+                    value="perempuan"
+                  />
+                  <label for="pria">Perempuan</label>
+                </td>
+              </tr>
+              <!-- Text Area -->
+              <tr>
+                <td id="pesan1">
+                  <label for="pesan" style="vertical-align: top">Pesan</label>
+                </td>
+                <td id="pesan1">:</td>
+                <td>
+                  <textarea
+                    name="pesan"
+                    id="pesan"
+                    placeholder="Pesan"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button style="width: 100%; padding: 5px">
+                    <b>Submit</b>
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </article>
+
+        <article id="review" class="flex"><h1>Cek Kodam</h1></article>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer>Created by Andreas <i class="bi bi-keyboard"></i></footer>
     <!-- End Content -->
   </body>
 </html>

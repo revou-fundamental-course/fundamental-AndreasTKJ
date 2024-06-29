@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
+/* Root */
 * {
   padding: 0px;
   margin: 0px;
@@ -10,16 +11,31 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+.title > h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Header */
 header {
+  padding: 10px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid black;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 9999;
 }
 
-.logo-icon {
-  width: 75px;
-  height: 75px;
-  border: 1px solid;
+.logo-icon > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 nav > a {
@@ -27,6 +43,7 @@ nav > a {
   border: 1px solid;
   border-radius: 5px;
   text-decoration: none;
+  color: black;
 }
 
 .banner-container {
@@ -35,18 +52,123 @@ nav > a {
   border: 1px solid;
 }
 
+/* Home */
+#home {
+  padding-top: 70px;
+}
+
+/* Our Profile */
 #profile-content {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .profile-item {
   text-align: center;
 }
 
-.profile-icon {
-  width: 75px;
-  height: 75px;
+.profile-icon > img {
+  width: 100px;
+  height: 100px;
   border: 1px solid;
   border-radius: 50%;
+}
+
+.profile-item > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+#our-project {
+  padding: 0px 5%;
+  margin-top: 50px;
+}
+
+.card-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-item {
+  text-align: center;
+  width: 350px;
+  height: 265px;
+  border: 2px solid;
+  border-radius: 10px;
+  margin: 5px 10px;
+  overflow: hidden;
+}
+
+.card-item > img {
+  width: 100%;
+}
+
+.card-item > h1 {
+  font-size: 18px;
+}
+
+.card-item > .line {
+  padding: 1px 0px;
+  margin: 5px 30%;
+  background-color: black;
+}
+
+.card-item > a {
+  color: black;
+  text-decoration: none;
+  transition: all ease-in 1ms;
+  margin-bottom: 20px;
+}
+
+.card-item > a:hover {
+  color: red;
+}
+
+.card-item > a > span {
+  color: red;
+}
+
+/* Form */
+#form {
+  padding: 10px 5%;
+}
+
+#name,
+#date {
+  display: flex;
+  width: 176px;
+}
+
+#pesan1 {
+  vertical-align: top;
+}
+
+#pesan {
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+
+/* Form & Review */
+#form-preview {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex {
+  display: flex;
+  flex: 1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-weight: bold;
+  background-color: gray;
+  padding: 5px 0px 10px;
+  margin: 50px 0px 0px;
 }

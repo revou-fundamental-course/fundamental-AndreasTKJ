@@ -17,7 +17,7 @@ body {
 }
 
 section {
-  padding-top: 100px;
+  padding-top: 200px;
 }
 
 .title > h1 {
@@ -149,7 +149,7 @@ nav > a {
 
 /* Our Project */
 #our-project {
-  padding: 100px 5%;
+  padding: 100px 5% 0px;
 }
 
 .card-content {
@@ -198,6 +198,12 @@ nav > a {
 
 .card-item > a > span {
   color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  #our-project {
+    padding: 200px 5%;
+  }
 }
 
 /* Form */

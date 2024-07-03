@@ -66,18 +66,20 @@ nav > a {
     flex-direction: column;
   }
 
-  .wrapper-navigation {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
   .logo-icon {
     padding-bottom: 14px;
   }
 
+  .wrapper-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
   .wrapper-navigation > a {
     text-align: center;
+    margin: 5px;
   }
 }
 
@@ -95,6 +97,14 @@ nav > a {
 .img-slideshow {
   width: 100%;
   height: 480px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #home {
+    padding-top: 200px;
+  }
 }
 
 /* Our Profile */
@@ -162,6 +172,7 @@ nav > a {
 
 .card-item > img {
   width: 100%;
+  height: auto;
 }
 
 .card-item > h1 {
@@ -208,6 +219,13 @@ nav > a {
   width: 100%;
   height: 100px;
   resize: none;
+}
+
+.button-sumbit {
+  width: 100%;
+  padding: 2px;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 /* Form & Review */

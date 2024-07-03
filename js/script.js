@@ -55,10 +55,9 @@ function showDivs(n) {
 
   imgList[slideIndex - 1].style.display = "block";
 
-  // Slide secara otomatis
-  // setInterval(() => {
-  //   plusDivs(1);
-  // }, 1000);
+  setInterval(() => {
+    plusDivs(1);
+  }, 5000);
 }
 // function showDivs(n) {
 //   var i;
